@@ -4,7 +4,7 @@ const fs = require('fs');
 
 function createWindow() {
     const win = new BrowserWindow({
-        width: 800,
+        width: 700,
         height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
@@ -21,7 +21,6 @@ function createWindow() {
 
 app.whenReady().then(() => {
     createWindow();
-
     const menuTemplate = [
         {
             label: 'File',
